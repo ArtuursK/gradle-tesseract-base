@@ -13,6 +13,7 @@ public class ResourceExtractor {
         }
     }
 
+    //get the path of the project resource folder
     public String getResourceFolderPath(String resourceFilename){
         String path;
         ClassLoader classLoader = getClass().getClassLoader();

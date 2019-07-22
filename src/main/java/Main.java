@@ -13,7 +13,6 @@ public class Main {
         File tmpFile = resourceExtractor.getFileFromResources(FILE_NAME);
         try {
             Tesseract tesseract = new Tesseract();
-
             tesseract.setDatapath(resourceExtractor.getResourceFolderPath(TRAINING_DATA));
             String imageText = tesseract.doOCR(tmpFile);
             System.out.println(imageText);
